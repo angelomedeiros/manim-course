@@ -1,9 +1,11 @@
 from manim import *
 
 class demo(Scene):
-    def construct(self):
-        circle = Circle(radius=0.5, stroke_width=10, color=RED, fill_opacity=0.3)
-        rect = SurroundingRectangle(circle)
-
-        self.play(Write(circle), Write(rect))
+   def construct(self):
+        a= np.random.randint(0, 255, size=(3, 4)) 
+        img = ImageMobject(np.uint8(a)) 
+        img.height = 6 
+        img.set_resampling_algorithm(RESAMPLING_ALGORITHMS['cubic']) 
+        
+        self.play()
 
