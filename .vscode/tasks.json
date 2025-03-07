@@ -1,0 +1,23 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "Manim Hot Reload (Alta Qualidade)",
+            "type": "shell",
+            "command": "python watch_manim.py",
+            "problemMatcher": [],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            }
+        }
+    ],
+    "inputs": [
+        {
+            "id": "folderPath",
+            "description": "Caminho para a pasta com animações Manim:",
+            "default": "./animations",
+            "type": "promptString"
+        }
+    ]
+}
